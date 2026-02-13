@@ -1,0 +1,209 @@
+02.14 05:42
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Gebi ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom, #5b0f1a, #f7d9d9, #fff3e6);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 20px;
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ffb6c1;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+h1{
+font-size:40px;
+}
+
+.card{
+background:white;
+color:#5b0f1a;
+padding:25px;
+border-radius:20px;
+margin:20px auto;
+max-width:600px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+#surprise{
+display:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Musik -->
+<iframe width="0" height="0" src="https://www.youtube.com/embed/YOUR_MUSIC_LINK?autoplay=1&loop=1&playlist=YOUR_MUSIC_LINK" frameborder="0"></iframe>
+
+<section class="show">
+<h1>Hai Gebi ❤️</h1>
+<p>Ada sebuah dunia kecil yang aku buat… khusus hanya untuk kamu.</p>
+<button onclick="nextSection()">Masuk Yuk</button>
+</section>
+
+<section>
+<h1> Cerita Kita</h1>
+
+<div class="card">
+Awalnya mungkin cuma dua orang asing yang tidak tahu akan sejauh ini berjalan bersama.
+</div>
+
+<div class="card">
+Hari demi hari, obrolan sederhana berubah menjadi rasa nyaman. Candaan kecil berubah jadi kebahagiaan yang selalu dirindukan.
+</div>
+
+<div class="card">
+Dan tanpa terasa… sekarang kita sudah 6 bulan berjalan bersama.
+</div>
+
+</section>
+
+<section>
+<h1> Hal Kecil Yang Aku Cintai Dari Kamu</h1>
+
+<div class="card">
+Cara kamu marah tapi tetap lucu.
+</div>
+
+<div class="card">
+Cara kamu merajuk tapi selalu ingin disayang.
+</div>
+
+<div class="card">
+Cara kamu hadir dan bikin hidup aku jauh lebih hangat.
+</div>
+
+</section>
+
+<section>
+<h1> Tentang Kita Sekarang</h1>
+
+<div class="card">
+Sekarang kita LDR...
+</div>
+
+<div class="card">
+Kamu pulang ke Galang Sumatra...
+</div>
+
+<div class="card">
+Aku tetap di Bali...
+</div>
+
+<div class="card">
+Tapi aneh ya… walaupun jarak hadir, rasa ini tetap terasa dekat.
+</div>
+
+</section>
+
+<section>
+<h1> Kenangan Yang Aku Simpan</h1>
+
+<div class="card">
+Tawa kamu yang tiba-tiba muncul.
+</div>
+
+<div class="card">
+Obrolan random yang malah jadi momen paling hangat.
+</div>
+
+<div class="card">
+Cara kita menyelesaikan masalah… dengan cinta.
+</div>
+
+</section>
+
+<section>
+<h1> Ada Sesuatu...</h1>
+<p>Klik tombol ini kalau kamu sudah scroll sampai sini...</p>
+<button onclick="showSurprise()">Buka Rahasia ❤️</button>
+</section>
+
+<section id="surprise">
+<h1> Untuk Kamu Gebi</h1>
+
+<div class="card">
+Terima kasih sudah hadir dalam hidup aku.
+</div>
+
+<div class="card">
+Terima kasih sudah memilih bertahan, bahkan di saat kita sama-sama belajar memahami satu sama lain.
+</div>
+
+<div class="card">
+Aku tidak tahu masa depan membawa kita kemana…
+</div>
+
+<div class="card">
+Tapi kalau aku boleh memilih… aku ingin tetap berjalan dengan kamu.
+</div>
+
+<div class="card">
+Mau senang, susah, merajuk, ketawa...
+Aku ingin tetap bersama kamu.
+</div>
+
+<h1>❤️</h1>
+
+<div class="card">
+Gebi...
+Will you stay with me and continue writing our story together?
+</div>
+
+</section>
+
+<script>
+
+function nextSection(){
+window.scrollBy({top:window.innerHeight,behavior:'smooth'});
+}
+
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+window.scrollBy({top:window.innerHeight,behavior:'smooth'});
+}
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+
+</script>
+
+</body>
+</html>
+
